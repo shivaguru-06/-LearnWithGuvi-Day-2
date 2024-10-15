@@ -76,79 +76,45 @@
 
     <div class="container mt-4">
       <!-- <h1 class="text-center mb-4" id="movieTitle">Indian 2</h1> -->
-      <div id="movieDetails" class="row">
-        <div style="color: #fff; padding: 0px">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-4">
-                <img
-                  src="master-et00110368-08-01-2021-07-41-32.avif"
-                  alt=""
-                  class="img-fluid mb-4"
-                  style="max-width: 100%; height: 100%; object-fit: cover"
-                />
-              </div>
-              <div class="col-md-8">
-                <div style="color: black; padding: 0px">
-                  <h1 class="mb-4">Master</h1>
-                  <h4 class="mb-4">Director : Lokesh Kanagaraj</h4>
-                  <h4 class="mb-4">Genre : Action/Thriller</h4>
-                  <h2>About the movie</h2>
-                  <p>An alcoholic professor is enrolled to teach at a juvenile facility, unbeknownst to him. He soon clashes with a ruthless gangster, who uses the children as scapegoats for his crimes</p>
+      <div id="movieDetails" class="row"></div>
+
+      <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="bookingModalLabel">Book Tickets</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-              </div>
+                <div class="modal-body">
+                    <form id="bookingForm">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phoneNumber" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phoneNumber" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="seatCount" class="form-label">How Many Seats ?</label>
+                            <input type="number" class="form-control" id="seatCount" required min="1">
+                        </div>
+                        <input type="hidden" id="modalMovieId">
+                        <input type="hidden" id="modalShowId">
+                        <input type="hidden" id="modalShowDate">
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-danger" id="submitBooking">Book Tickets</button>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-      <hr style="margin-top: 50px" />
-      <h2 class="mt-4 mb-4 text-center">Book Tickets</h2>
-      <div class="container mt-4">
-        <div class="table-responsive">
-          <table class="table table-bordered">
-            <thead>
-              <tr>
-                <th>Date</th>
-                <th>Showtime</th>
-                <th>Seats</th>
-                <th>Book Tickets</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td rowspan="5" class="align-midle">
-                  <strong>2024-10-12</strong>
-                </td>
-                <td>
-                  <div
-                    class="border p-1"
-                    style="
-                      display: flex;
-                      flex-direction: column;
-                      align-items: center;
-                    "
-                  >
-                    <div>02:45PM</div>
-                    <div class="text-muted" style="font-size: 15px">
-                      4K Dolby Atmos 7.1
-                    </div>
-                  </div>
-                </td>
-                <td>
-                    <div class="border p-3 " style="display: flex; flex-direction: column; align-items: center;">
-                        <div>18</div>
-                    </div>
-                </td>
-                
-                <td>
-                    <button class="btn btn-sm btn-danger p-3 d-block w-100">Book Tickets</button>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
     </div>
-    <script src="./sdetails-cript.js"></script>
+    <script src="details-script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
