@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Movie Booking Application</title>
+    <!-- Initialize Bootstrap  -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -73,48 +74,91 @@
         </div>
       </div>
     </nav>
-
     <div class="container mt-4">
-      <!-- <h1 class="text-center mb-4" id="movieTitle">Indian 2</h1> -->
-      <div id="movieDetails" class="row"></div>
-
-      <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="bookingModalLabel">Book Tickets</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form id="bookingForm">
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Full Name</label>
-                            <input type="text" class="form-control" id="name" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email Address</label>
-                            <input type="email" class="form-control" id="email" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="phoneNumber" class="form-label">Phone Number</label>
-                            <input type="tel" class="form-control" id="phoneNumber" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="seatCount" class="form-label">How Many Seats ?</label>
-                            <input type="number" class="form-control" id="seatCount" required min="1">
-                        </div>
-                        <input type="hidden" id="modalMovieId">
-                        <input type="hidden" id="modalShowId">
-                        <input type="hidden" id="modalShowDate">
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="submit" class="btn btn-danger" id="submitBooking">Book Tickets</button>
-                </div>
+      <div id="movieCards" class="row">
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+          <div class="card" style="cursor: pointer">
+            <img
+              src="https://assets-in.bmscdn.com/iedb/movies/images/website/poster/large/vettaiyan-et00379391-1727938465.jpg"
+              alt=""
+            />
+            <div class="card-body">
+              <h5 class="card-title">Indian 2</h5>
+              <p class="card-text">Drama</p>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-    <script src="details-script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <footer class="text-center text-lg-start bg-body-tertiary text-muted mt-4">
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        </section>
+
+        <!-- Section: Links -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Book My Show
+                        </h6>
+                        <p>
+                            Your go-to platform for booking movie tickets, finding showtimes, and exploring the latest
+                            films.
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Popular Movies
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Latest Releases</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Upcoming Movies</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Top Rated</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Now Showing</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Contact Us</h6>
+                        <p>123 Movie Lane, Cinema City, NY 10012, US</p>
+                        <p>
+                            support@bookmyshow.com
+                        </p>
+                        <p>+1 234 567 8900</p>
+                        <p>+1 234 567 8901</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2024 Book My Show:
+            <a class="text-reset fw-bold" href="https://www.bookmyshow.com/">bookmyshow.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <script src="./script.js"></script>
+
   </body>
 </html>
