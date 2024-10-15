@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Booking Application</title>
+    <!-- Initialize Bootstrap  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark"
+      style="background-color: #333"
+    >
+      <div class="container">
+        <a
+          class="navbar-brand"
+          href="#"
+          style="color: #f84464 !important; font-weight: bold"
+          >bookMyshow</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: #fff !important"
+                >Movies</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: #fff !important"
+                >Stream</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: #fff !important"
+                >Events</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: #fff !important"
+                >Plays</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: #fff !important"
+                >Sports</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: #fff !important"
+                >Activities</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              type="search"
+              class="form-control me-2"
+              placeholder="Search for Movies, Events, Plays"
+            />
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="container mt-4">
+      <div id="movieCards" class="row">
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+          <div class="card" style="cursor: pointer">
+            <img
+              src="Leo_(2023_Indian_film).jpg"
+              alt=""
+            />
+            <div class="card-body">
+              <h5 class="card-title">Leo</h5>
+              <p class="card-text">Drama</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <a href="details.html" style="color: black;text-decoration: none;">
+            
+          <div class="card" style="cursor: pointer">
+            
+            
+            <img
+              src="master-et00110368-08-01-2021-07-41-32.avif"
+              alt=""
+            />
+            <div class="card-body">
+              <h5 class="card-title">Master</h5>
+              <p class="card-text">Drama</p>
+            </div>
+            
+          </div>
+            </a>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+          <div class="card" style="cursor: pointer">
+            <img
+              src="The_Greatest_of_All_Time.jpg"
+              alt=""
+            />
+            <div class="card-body">
+              <h5 class="card-title">The Greatest of All Time</h5>
+              <p class="card-text">Drama</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+          <div class="card" style="cursor: pointer">
+            <img
+              src="bigil-et00105457-1667802781.avif"
+              alt=""
+            />
+            <div class="card-body">
+              <h5 class="card-title">Bigil</h5>
+              <p class="card-text">Drama</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+          <div class="card" style="cursor: pointer">
+            <img
+              src="images.jfif"
+              alt=""
+            />
+            <div class="card-body">
+              <h5 class="card-title">Ghilli</h5>
+              <p class="card-text">Drama</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+          <div class="card" style="cursor: pointer">
+            <img
+              src="theri-et00036069-18-06-2017-01-41-22.avif"
+              alt=""
+            />
+            <div class="card-body">
+              <h5 class="card-title">Theri</h5>
+              <p class="card-text">Drama</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+          <div class="card" style="cursor: pointer">
+            <img
+              src="images (1).jfif"
+              alt=""
+            />
+            <div class="card-body">
+              <h5 class="card-title">Thuppaki</h5>
+              <p class="card-text">Drama</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+          <div class="card" style="cursor: pointer">
+            <img
+              src="Kaththi_poster.jpg"
+              alt=""
+            />
+            <div class="card-body">
+              <h5 class="card-title">Kaththi</h5>
+              <p class="card-text">Drama</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="text-center text-lg-start bg-body-tertiary text-muted mt-4">
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        </section>
+
+        <!-- Section: Links -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Book My Show
+                        </h6>
+                        <p>
+                            Your go-to platform for booking movie tickets, finding showtimes, and exploring the latest
+                            films.
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Popular Movies
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Latest Releases</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Upcoming Movies</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Top Rated</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Now Showing</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Contact Us</h6>
+                        <p>Ragavan R,VanaRosa Cinemas,United States of Palur,Trichy</p>
+                        <p>
+                            support@bookmyshow.com
+                        </p>
+                        <p>+91 6381696340</p>
+                        <p>+91 9342731202</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2024 Book My Show:
+            <a class="text-reset fw-bold" href="https://www.bookmyshow.com/">bookmyshow.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark"
+      style="background-color: #333"
+    >
+      <div class="container">
+        <a
+          class="navbar-brand"
+          href="#"
+          style="color: #f84464 !important; font-weight: bold"
+          >bookMyshow</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: #fff !important"
+                >Movies</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: #fff !important"
+                >Stream</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: #fff !important"
+                >Events</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: #fff !important"
+                >Plays</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: #fff !important"
+                >Sports</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: #fff !important"
+                >Activities</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              type="search"
+              class="form-control me-2"
+              placeholder="Search for Movies, Events, Plays"
+            />
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-4">
+      <!-- <h1 class="text-center mb-4" id="movieTitle">Indian 2</h1> -->
+      <div id="movieDetails" class="row">
+        <div style="color: #fff; padding: 0px">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+                <img
+                  src="master-et00110368-08-01-2021-07-41-32.avif"
+                  alt=""
+                  class="img-fluid mb-4"
+                  style="max-width: 100%; height: 100%; object-fit: cover"
+                />
+              </div>
+              <div class="col-md-8">
+                <div style="color: black; padding: 0px">
+                  <h1 class="mb-4">Master</h1>
+                  <h4 class="mb-4">Director : Lokesh Kanagaraj</h4>
+                  <h4 class="mb-4">Genre : Action/Thriller</h4>
+                  <h2>About the movie</h2>
+                  <p>An alcoholic professor is enrolled to teach at a juvenile facility, unbeknownst to him. He soon clashes with a ruthless gangster, who uses the children as scapegoats for his crimes</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr style="margin-top: 50px" />
+      <h2 class="mt-4 mb-4 text-center">Book Tickets</h2>
+      <div class="container mt-4">
+        <div class="table-responsive">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Showtime</th>
+                <th>Seats</th>
+                <th>Book Tickets</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td rowspan="5" class="align-midle">
+                  <strong>2024-10-12</strong>
+                </td>
+                <td>
+                  <div
+                    class="border p-1"
+                    style="
+                      display: flex;
+                      flex-direction: column;
+                      align-items: center;
+                    "
+                  >
+                    <div>02:45PM</div>
+                    <div class="text-muted" style="font-size: 15px">
+                      4K Dolby Atmos 7.1
+                    </div>
+                  </div>
+                </td>
+                <td>
+                    <div class="border p-3 " style="display: flex; flex-direction: column; align-items: center;">
+                        <div>18</div>
+                    </div>
+                </td>
+                
+                <td>
+                    <button class="btn btn-sm btn-danger p-3 d-block w-100">Book Tickets</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="./sdetails-cript.js"></script>
+  </body>
+</html>
