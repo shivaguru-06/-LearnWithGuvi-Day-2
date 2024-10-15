@@ -28,7 +28,7 @@ function getQueryParams() {
               <div class="row">
                 <div class="col-md-4">
                   <img
-                    src="#"
+                    src="${movie.image}"
                     alt=""
                     class="img-fluid mb-4"
                     style="max-width: 100%; height: 100%; object-fit: cover"
